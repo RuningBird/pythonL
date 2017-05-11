@@ -6,5 +6,3 @@ if guess == 8:
 else:
     print("wrong")
 print("game over")
-print("game over")
-print("game over")
