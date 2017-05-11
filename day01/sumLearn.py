@@ -1,10 +1,15 @@
 
-# @列表删除元素
-lis = [1, 2]
-# lis.remove(1)
-# del lis[0]
-nn =lis.pop(0)
-print(nn,lis)
+
+#切片
+lis = [0,1,2,3,4,5,6,7,8,9]
+print(lis[0:10:2])
+
+# # @列表删除元素
+# lis = [1, 2]
+# # lis.remove(1)
+# # del lis[0]
+# nn =lis.pop(0)
+# print(nn,lis)
 
 # print(lis)
 
