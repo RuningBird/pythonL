@@ -1,4 +1,13 @@
 
+
+#列表扩展
+lis = [1, 2]
+lis.append(3)
+lis.extend([4,5])
+lis.insert(0,0)#顺序索引都是从0开始
+print(lis)
+
+
 # #断言
 # assert 3 > 4#正确没有任何提示
 # print('false')#不会执行到这一句
