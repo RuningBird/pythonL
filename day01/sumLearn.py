@@ -1,11 +1,19 @@
 
-
-#列表扩展
+# @列表删除元素
 lis = [1, 2]
-lis.append(3)
-lis.extend([4,5])
-lis.insert(0,0)#顺序索引都是从0开始
-print(lis)
+# lis.remove(1)
+# del lis[0]
+nn =lis.pop(0)
+print(nn,lis)
+
+# print(lis)
+
+# #列表扩展
+# lis = [1, 2]
+# lis.append(3)
+# lis.extend([4,5])
+# lis.insert(0,0)#顺序索引都是从0开始
+# print(lis)
 
 
 # #断言
