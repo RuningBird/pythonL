@@ -8,3 +8,4 @@ else:
 
 print("game over")
 print("game over")
+print("game over")
