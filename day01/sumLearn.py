@@ -1,8 +1,41 @@
+# 列表操作
+l1 = [1, 2, 3]
+l2 = [4, 1, 1]
+# print(l1 > l2)  # 之比较了一个1和1
+#
+# print(l1 + l2)
+# print(l1 * 2)
+#
+# print(1 not in l1)
+# print(1 in l1)
+# l3 = [9, l2]
+# print(l3)
+#
+# print(1 in l3[1])#在第二个元素里面
+# print(l3[1][2])
 
+# print(l2.count(1))
+# print(l2.index(1,2,3))
+# l2.reverse()
+# print(l2)
 
-#切片
-lis = [0,1,2,3,4,5,6,7,8,9]
-print(lis[0:10:2])
+# l2.sort()
+# print(l2)
+# l2.sort(reverse=True)
+# print(l2)
+
+# #z=类似于指针
+# l3 = l1
+# l1.append(999)
+# print(l3)
+
+# l3 = l1.copy()
+# l1.append(999)
+# print(l3)
+
+# #切片
+# lis = [0,1,2,3,4,5,6,7,8,9]
+# print(lis[0:10:2])
 
 # # @列表删除元素
 # lis = [1, 2]
