@@ -1,3 +1,34 @@
+# 014字符串操作, tuple ,list,str 属于sequence
+s1 = 'abcdeddDfg555a'
+# print('c' in s1)
+# print(s1, s1.capitalize())  # 首字母大写
+# print('sSfDddFf'.casefold())
+# print(s1.center(15))
+# s2 = s1.center(30,"1")
+# print(s1.center(100,'2'))
+# print(s1.count('dd'))
+# print(s1.endswith('g'))
+# print(s1,'\n', s1.expandtabs())
+
+# print(s1.isalnum())
+
+# s2 = '1'
+# print(s2.join('aaaaaaaaa'))
+# print(s1.partition('de') )
+
+# print(s1.split('d'))
+
+# s3 = '          a b c 1 2 3           '
+# print(s3.strip())
+# print(s1.strip('a'))
+
+# s4 = 'aBc'
+# print(s4.swapcase())
+#####################z重点
+# print(s1.translate(str.maketrans('a','z')))
+s5 = 'a b c'
+print(s5.zfill(1))
+
 # 元祖#tuple操作
 # t1 = (1, 2, 3, 4)
 # t2 = 1, 2, 3, 4
