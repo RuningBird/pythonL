@@ -1,7 +1,8 @@
 import random as rd
+
 print("-------------------")
 guess = 0
-rdnum = rd.randint(1,10)
+rdnum = rd.randint(1, 10)
 while guess != rdnum:
     temp = input("心中数字:")
     guess = int(temp)

@@ -10,8 +10,10 @@
 
 
 
-
-
+# ## 随机数范围测试
+# import random as rd
+# rdnum = rd.randint(1, 3)
+# print(rdnum)
 
 
 # print("Let\' go")
