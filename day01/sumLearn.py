@@ -1,5 +1,17 @@
+
+# #字符串格式化
+# s1 = 'a{0}--{a}=1';
+# s2 = s1.format('0',a='555')
+# print(s2)
+# print('%c %c'% (97,98))
+# s3 = '%c %c'% (97,98)
+# print(s3)
+#
+#
+
+
 # 014字符串操作, tuple ,list,str 属于sequence
-s1 = 'abcdeddDfg555a'
+# s1 = 'abcdeddDfg555a'
 # print('c' in s1)
 # print(s1, s1.capitalize())  # 首字母大写
 # print('sSfDddFf'.casefold())
@@ -25,9 +37,9 @@ s1 = 'abcdeddDfg555a'
 # s4 = 'aBc'
 # print(s4.swapcase())
 #####################z重点
-# print(s1.translate(str.maketrans('a','z')))
-s5 = 'a b c'
-print(s5.zfill(1))
+# # print(s1.translate(str.maketrans('a','z')))
+# s5 = 'a b c'
+# print(s5.zfill(1))
 
 # 元祖#tuple操作
 # t1 = (1, 2, 3, 4)
