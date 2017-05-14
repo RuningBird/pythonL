@@ -1,14 +1,23 @@
-#函数
-#函数文档
+###################函数
+# 可变参数-收集参数
+def mp2(*p):
+    print(len(p))
+    print(p)
+    print('==================')
+    for te in p:
+        print(te)
+        # print(te, end='  ')
+
+
+# mp2([1, 2, 3, 4, 5, 'aaa'])
+mp2(1, 2, 3, 4, 5, 'aaa')
+
+# 函数文档
 # def mp():
 #     '函数文档name猜都是'
 #     print("a test")
 # # mp()
 # print(mp.__doc__)
-
-
-
-
 
 
 # #字符串格式化
