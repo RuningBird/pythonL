@@ -1,16 +1,25 @@
 ###################函数
+
+
+
+# #返回多个值
+# def m3():
+#     return 1,2,3
+# print(list(m3()))
+
 # 可变参数-收集参数
-def mp2(*p):
-    print(len(p))
-    print(p)
-    print('==================')
-    for te in p:
-        print(te)
-        # print(te, end='  ')
-
-
-# mp2([1, 2, 3, 4, 5, 'aaa'])
-mp2(1, 2, 3, 4, 5, 'aaa')
+# def mp2(*p):
+#     '多重类型，前面的参数要用关键字形式赋值，建议附上初始值'
+#     print(len(p))
+#     print(p)
+#     print('==================')
+#     for te in p:
+#         print(te)
+#         # print(te, end='  ')
+#
+#
+# # mp2([1, 2, 3, 4, 5, 'aaa'])
+# mp2(1, 2, 3, 4, 5, 'aaa')
 
 # 函数文档
 # def mp():
