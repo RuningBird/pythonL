@@ -1,11 +1,45 @@
 ###################函数
+# 内嵌函数和闭包
+# def f1():
+#     print('fun1')
+#     def f2():
+#         print('f2')
+#     f2()
+# f1()
 
-
-
+# 闭包
 # #返回多个值
 # def m3():####
 #     return 1,2,3
 # print(list(m3()))
+
+# 闭包
+# def fx(a):
+#     def fy(b):
+#         return a + b
+#
+#     return fy
+#
+#
+# r = fx(1)
+# print(r(2))
+# print(fx(1)(2))
+
+# =========================python 3 增加 nonlocal=============
+
+# def fx(a):
+#     def fy(b):
+#         nonlocal a
+#         a = a + b
+#         return a
+#
+#     return fy
+#
+#
+# r = fx(2)
+# print(r(2))
+# print(fx(1)(2))
+
 
 # 可变参数-收集参数
 # def mp2(*p):
