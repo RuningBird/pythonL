@@ -1,10 +1,16 @@
-###################函数
+
+
 # BIF filter /重要，可结合匿名函数
+# map 映射
+print(list(map(lambda x: x * 2, range(10))))
 
-#filer(f.B)返回B中经过f处理为true的部分
+# filer(f.B)返回B中经过f处理为true的部分
 
-lis = filter(lambda x: True if x % 2 == 0 else False, [1,2,3,4,5,6,7])
-print(list(lis))
+# lis = filter(lambda x: True if x % 2 == 0 else False, [1,2,3,4,5,6,7])
+# print(list(lis))
+
+###################函数
+
 
 # # 匿名函数
 # g = lambda x, y: x * y m
