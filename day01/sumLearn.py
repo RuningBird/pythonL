@@ -1,8 +1,17 @@
+###递归
+
+
+# def fatorial(n):#阶乘
+#     if n == 1:
+#         return 1
+#     else:
+#         return n * fatorial(n - 1)
+# print(fatorial(3))
 
 
 # BIF filter /重要，可结合匿名函数
-# map 映射
-print(list(map(lambda x: x * 2, range(10))))
+# # map 映射
+# print(list(map(lambda x: x * 2, range(10))))
 
 # filer(f.B)返回B中经过f处理为true的部分
 
