@@ -1,4 +1,15 @@
 ###################函数
+# BIF filter /重要，可结合匿名函数
+
+#filer(f.B)返回B中经过f处理为true的部分
+
+lis = filter(lambda x: True if x % 2 == 0 else False, [1,2,3,4,5,6,7])
+print(list(lis))
+
+# # 匿名函数
+# g = lambda x, y: x * y m
+# print(g(2, 3))
+
 # 内嵌函数和闭包
 # def f1():
 #     print('fun1')
