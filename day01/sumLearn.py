@@ -1,5 +1,39 @@
-###递归
+# # 字典=关系数组=哈希表
+# # in , not in查找
+# d1 = {'a': 1, 'b': 2}
+# print(d1.get(2))#'none
+# d1.setdefault('c',3)
+# print(d1)
+# d2 = {'a':4,'b':5}
+# d1.update(d2)
+# print(d1)
 
+# d1.popitem()#随机弹出
+
+# # values,keys,items
+# d2 = dict.fromkeys(range(32),'zan')
+# for v in d2.keys():
+#     print(v)
+# for v in d2.values():
+#     print(v)
+# for it in d2.items():
+#     print(it)
+
+# d2 = {}
+# d2 = d2.fromkeys((1, 2, 3), 'a')
+# d3 = dict.fromkeys((1, 2, 3))
+# # d3 = dict.fromkeys((1, 2, 3),('a','b','c'))#这个不行
+# print(d2, d3)
+
+# d1 = {'a':1,'b':2}
+# tp = d1.items()
+# d2 = dict([('a', 1), ('b', 2)])
+# d3 = dict((('a', 1), ('b', 2)))
+# d4 = dict(a='one',b='two')#a不能用数字
+# print(d3)
+# print(type(d3))
+
+###递归
 
 # def fatorial(n):#阶乘
 #     if n == 1:
