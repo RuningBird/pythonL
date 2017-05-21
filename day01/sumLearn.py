@@ -1,4 +1,59 @@
-################图形############################
+##################################面向对象#####################
+
+####公有和私有 name mangling  改编
+class Bird:
+    num = 0
+    __age = 0;
+    def __init__(self):
+        self.num += 1
+        self.name = 'bird'
+
+    def getA(self):
+        return self.name
+
+    def getAge(self):
+        return self.__age
+b1 = Bird()
+print(b1.getAge())
+
+#%%%%%%多态
+
+
+
+# class Bird:
+#     num = 0
+#
+#     def __init__(self):
+#         self.num += 1
+#         self.name = 'bird'
+#
+#     def getA(self):
+#         return self.name
+#
+#
+# b1 = Bird()
+# b2 = Bird()
+# print(Bird.num, b2.name, b1.num, b1.name)
+#￥￥￥￥继承
+# class Bird(list):
+#     num = 0
+#
+#     def __init__(self):
+#         self.num += 1
+#         self.name = 'bird'
+#
+#     def getA(self):
+#         return self.name
+#
+#
+# b1 = Bird()
+#
+# b2 = Bird()
+# b2.append(1)
+# print(b2 )
+
+
+# ################图形############################
 # import tkinter as tk
 # t = tk.Tk()
 # L = tk.Label(t,text = 'label')
@@ -35,7 +90,7 @@
 
 ####else
 # 要么，要么
-#for while： else 干完执行，干完不执行
+# for while： else 干完执行，干完不执行
 # 没有问题就干
 
 # try:
@@ -57,7 +112,7 @@
 #     print('@@@@@wanle')
 
 #########异常处理try: except exception:
-#raise自己引发异常
+# raise自己引发异常
 # raise ZeroDivisionError
 # raise TypeError
 # raise ZeroDivisionError('出书为零')
