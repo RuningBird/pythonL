@@ -1,30 +1,65 @@
+#########异常处理try: except exception:
+#raise自己引发异常
+# raise ZeroDivisionError
+# raise TypeError
+# raise ZeroDivisionError('出书为零')
+
+###直接except：不推荐
+# try:##直接捕获到第一个异常，剩下的不会被处理
+#     f = open('ss')
+#     a = 5 / 0
+#     f.close()
+# except OSError as r2:
+#     print('打不开',r2)
+# except ZeroDivisionError as r1:
+#     print('sss',r1)
+# finally:
+#     f.close() #防止前面执行的操作没有被写入到文件里面
+#     print('over')
+
+# try:##直接捕获到第一个异常，剩下的不会被处理
+#     f = open('ss')
+#     a = 5 / 0
+#     f.close()
+# except (OSError,TypeError,ZeroDivisionError):
+#     print('打不开')
+
+
+
+# try:
+#     f = open('ss')
+# except Exception :
+#     print('打不开')
+# else:
+#     print('over')
+
 #####################文件
 ###写入对象等pickle，unpickle
-import pickle
-
-# #读取
-# pickle_read = open('e:/object.pkl','rb')
-# l2 = pickle.load(pickle_read)
-# print(l2)
+# import pickle
 #
-pr = open('e:/object.pkl', 'rb')
-ol = pickle.load(pr)
-ol1 = pickle.load(pr)
-print(ol)
-print(ol1)
+# # #读取
+# # pickle_read = open('e:/object.pkl','rb')
+# # l2 = pickle.load(pickle_read)
+# # print(l2)
+# #
+# pr = open('e:/object.pkl', 'rb')
+# ol = pickle.load(pr)
+# ol1 = pickle.load(pr)
+# print(ol)
+# print(ol1)
+#
+#
+# pr.close()
 
-
-pr.close()
-
-######写入
-l1 = [1, 2, 3, 4, 5, 'a', [11, 33, 44]]
-pickle_file = open('e:/object.pkl', 'wb')
-pickle.dump(l1, pickle_file)
-pickle.dump(['i','love'],pickle_file)
-pickle_file.close()
-
-# #文件读每一行
-# f = open(r'e:\file.txt')
+# ######写入
+# l1 = [1, 2, 3, 4, 5, 'a', [11, 33, 44]]
+# pickle_file = open('e:/object.pkl', 'wb')
+# pickle.dump(l1, pickle_file)
+# pickle.dump(['i','love'],pickle_file)
+# pickle_file.close()
+#
+# # #文件读每一行
+# # f = open(r'e:\file.txt')
 # l1 = []
 # # for r1 in f:
 # #    l1.append(r1)
