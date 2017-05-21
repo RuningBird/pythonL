@@ -1,3 +1,30 @@
+
+
+
+
+
+
+#######################################################__方法，魔法方法
+# ####析构__del__(),垃圾回收机制调用
+# class P:
+#     def __init__(self):
+#         print('init method')
+#
+#     def __del__(self):
+#         print('del method')
+#
+#
+# p1 = P()
+
+# # __new__()--> __init__
+# class CatStr(str):
+#     def __new__(cls, string):
+#         string = string.upper()
+#         return str.__new__(cls,string) #也可以string
+#
+# a = CatStr('ssssadfadsfasf')
+# print(a)
+
 ##################################面向对象#####################
 ####BIF
 # class P:
