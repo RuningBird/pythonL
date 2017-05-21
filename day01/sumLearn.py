@@ -1,19 +1,68 @@
 ##################################面向对象#####################
+####BIF
+# class P:
+#     def __init__(self):
+#         self.a = 5
+#
+#     def getA(self):
+#         return self.a
+#     def setA(self,a):
+#         self.a = a
+#     # x = property(getA,setA)##也可以加上del函数
+#
+# # p1 = P()
+# p1.x = 20
+# print(p1.x)
+
+
+# class B1:
+#     def fb1(self):
+#         print("b1")
+#
+#
+# class B2:
+#     def fb2(self):
+#         print("b2")
+#
+#
+# class C1(B1, B2):
+#     def fc1(self):
+#         print("c1")
+# # property
+
+# print(issubclass(C1, C1))
+# print(issubclass(C1, B1))
+
+# c = C1()
+# print(isinstance(c, C1))
+
+##对象属性相关
+# print(hasattr(C1, 'fc1'))
+# fun = getattr(C1, 'fc1')
+# setattr(C1,'y','22')
+#
+# c = C1()
+# print(c.y)
+# print(fun)
+#
+# # delattr()  #删除属性
+
+
 
 ####继承例子，子类重写构造方法，要super().__init__()
 
 #######多重继承：尽量少用
-class B1:
-    def fb1(self):
-        print("b1")
-
-class B2:
-    def fb2(self):
-        print("b2")
-
-class C1(B1,B2):
-    def fc1(self):
-        print("c1")
+# class B1:
+#     def fb1(self):
+#         print("b1")
+#
+# class B2:
+#     def fb2(self):
+#         print("b2")
+#
+# class C1(B1,B2):
+#     def fc1(self):
+#         print("c1")
 
 # ####公有和私有 name mangling  改编,假私有
 # class Bird:
