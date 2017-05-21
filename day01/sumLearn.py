@@ -1,3 +1,14 @@
+####################算数运算
+##反运算也要加 add. radd
+class NewInt(int):
+    def __radd__(self, other):
+        return int.__sub__(self, other)
+a = NewInt(5)
+b = NewInt(3)
+
+print(1+b) ###1的不支持，反过来找b的
+print(a + b)
+
 ##################################工厂函数+++++++++++++++++++++
 # print(type(type))
 #
