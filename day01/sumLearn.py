@@ -1,5 +1,20 @@
 ##################################面向对象#####################
 
+####继承例子，子类重写构造方法，要super().__init__()
+
+#######多重继承：尽量少用
+class B1:
+    def fb1(self):
+        print("b1")
+
+class B2:
+    def fb2(self):
+        print("b2")
+
+class C1(B1,B2):
+    def fc1(self):
+        print("c1")
+
 # ####公有和私有 name mangling  改编,假私有
 # class Bird:
 #     num = 0
@@ -17,7 +32,7 @@
 # # print(b1.getAge())
 # print(b1._Bird__age)
 
-#%%%%%%多态
+# %%%%%%多态
 
 
 
@@ -35,7 +50,7 @@
 # b1 = Bird()
 # b2 = Bird()
 # print(Bird.num, b2.name, b1.num, b1.name)
-#￥￥￥￥继承
+# ￥￥￥￥继承
 # class Bird(list):
 #     num = 0
 #
