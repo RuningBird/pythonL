@@ -1,20 +1,21 @@
 ##################################面向对象#####################
 
-####公有和私有 name mangling  改编
-class Bird:
-    num = 0
-    __age = 0;
-    def __init__(self):
-        self.num += 1
-        self.name = 'bird'
-
-    def getA(self):
-        return self.name
-
-    def getAge(self):
-        return self.__age
-b1 = Bird()
-print(b1.getAge())
+# ####公有和私有 name mangling  改编,假私有
+# class Bird:
+#     num = 0
+#     __age = 0;
+#     def __init__(self):
+#         self.num += 1
+#         self.name = 'bird'
+#
+#     def getA(self):
+#         return self.name
+#
+#     def getAge(self):
+#         return self.__age
+# b1 = Bird()
+# # print(b1.getAge())
+# print(b1._Bird__age)
 
 #%%%%%%多态
 
