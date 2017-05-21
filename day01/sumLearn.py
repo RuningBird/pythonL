@@ -1,15 +1,50 @@
+#####################文件
+###写入对象等pickle，unpickle
+import pickle
+
+# #读取
+# pickle_read = open('e:/object.pkl','rb')
+# l2 = pickle.load(pickle_read)
+# print(l2)
+#
+pr = open('e:/object.pkl', 'rb')
+ol = pickle.load(pr)
+ol1 = pickle.load(pr)
+print(ol)
+print(ol1)
+
+
+pr.close()
+
+######写入
+l1 = [1, 2, 3, 4, 5, 'a', [11, 33, 44]]
+pickle_file = open('e:/object.pkl', 'wb')
+pickle.dump(l1, pickle_file)
+pickle.dump(['i','love'],pickle_file)
+pickle_file.close()
+
+# #文件读每一行
+# f = open(r'e:\file.txt')
+# l1 = []
+# # for r1 in f:
+# #    l1.append(r1)
+# # print(l1)
+#
+# for r1 in f:
+#    print(r1)
+
 ##########集合,无序，没有重复,add,remove,
 
-s1 = {1, 2, 3, 4, 5}  # 没有体现映射关系就是集合
-s2 = set([1, 2, 3, 3, 3, 3, 3])
-s3 = set('abc')
-print(s2, s3)
-print(type(s1))
-
-###不可变集合frozen
-s4 = frozenset(s1)
-print(s4)
-
+# s1 = {1, 2, 3, 4, 5}  # 没有体现映射关系就是集合
+# s2 = set([1, 2, 3, 3, 3, 3, 3])
+# s3 = set('abc')
+# print(s2, s3)
+# print(type(s1))
+#
+# ###不可变集合frozen
+# s4 = frozenset(s1)
+# print(s4)
+#
 
 # ###################### 字典=关系数组=哈希表
 # # in , not in查找
