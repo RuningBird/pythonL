@@ -1,8 +1,29 @@
+##################################工厂函数+++++++++++++++++++++
+# print(type(type))
+#
+# a = int('234')  ##工厂，返回一个对象，
+# b = int('22')
+# print(a + b)  # 两个对象相加
+####重写+
+# class NewInt(int):
+#     def __add__(self, other):
+#         return int.__sub__(self, other)
+#
+#
+# a = NewInt(5)
+# b = NewInt(3)
+# print(a + b)
 
-
-
-
-
+####会无线递归
+# class TryInt(int):
+#     def __add__(self, other):
+#         return self + other
+#
+#
+# a = TryInt(5)
+# b = TryInt(3)
+#
+# print(a + b)
 
 #######################################################__方法，魔法方法
 # ####析构__del__(),垃圾回收机制调用
