@@ -1,3 +1,18 @@
+################图形############################
+# import tkinter as tk
+# t = tk.Tk()
+# L = tk.Label(t,text = 'label')
+#
+# L.pack()
+# t.mainloop()
+
+# import easygui as g #推荐
+# # from easygui import *  #导入全部的
+# # g.msgbox('a')
+# g.textbox()
+
+
+
 #######################with，else语句#################################
 ###with
 # try: #省略finally，因为打开错误的话finally有可能因为没有打开文件，而不能关闭
