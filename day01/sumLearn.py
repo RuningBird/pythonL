@@ -1,13 +1,32 @@
-####################算数运算
-##反运算也要加 add. radd
-class NewInt(int):
-    def __radd__(self, other):
-        return int.__sub__(self, other)
-a = NewInt(5)
-b = NewInt(3)
+#################################44以前复习
+##__str__
 
-print(1+b) ###1的不支持，反过来找b的
-print(a + b)
+class N:
+    def __str__(self):
+        return 'abc'
+
+    ##控制台可以直接调用
+    def __repr__(self):
+        return 'abc'
+n = N()
+print(n)
+
+
+
+####################算数运算
+##增量赋值 a += b a= a+b,iadd
+
+
+##反运算也要加 add. radd
+# class NewInt(int):
+#     #参数互换，符合顺序
+#     def __radd__(self, other):
+#         return int.__sub__(self, other)
+# a = NewInt(5)
+# b = NewInt(3)
+#
+# print(1+b) ###1的不支持，反过来找b的
+# print(a + b)
 
 ##################################工厂函数+++++++++++++++++++++
 # print(type(type))
