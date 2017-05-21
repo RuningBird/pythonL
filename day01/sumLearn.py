@@ -1,3 +1,46 @@
+#######################with，else语句#################################
+###with
+# try: #省略finally，因为打开错误的话finally有可能因为没有打开文件，而不能关闭
+#     with ('E:/aa.txt','w') as f:
+#         for ec in f:
+#             print(ec)
+# except OSError as r:
+#     print('错误',r)
+
+
+# try:
+#     f = open('E:/aa.txt','w')
+#     for ec in f:
+#         print(ec)
+# except OSError as r:
+#     print('错误',r)
+# finally:
+#     f.close()
+
+
+####else
+# 要么，要么
+#for while： else 干完执行，干完不执行
+# 没有问题就干
+
+# try:
+#     print(int('5'))
+# except:
+#     print('yichang ')
+# else:
+#     print('额外的else部分')
+
+# for i in range(10):
+#     print('i=-',i)
+# else:
+#     print('@@@@@wanle')
+
+# for i in range(10):
+#     print('i=-',i)
+#     break #加了就不执行else
+# else:
+#     print('@@@@@wanle')
+
 #########异常处理try: except exception:
 #raise自己引发异常
 # raise ZeroDivisionError
