@@ -1,5 +1,27 @@
+##################################列表推导式，字典推导式和集合推导式#######################################################
+
+##$$$$ 列表推导
+# a = [ i for i in range(100) if not (i % 2) and (i % 3)]
+# print(a)
+
+##@@@@@@字典推导
+# b = {i: i % 2 == 0 for i in range(10)}
+# print(b)
+##@@@@@@集合推导
+# c = {i for i in range(10)}
+# print(c)
+
+###@@@@@@@@@@生成器推导式
+# gen = (i for i in range(10))
+# for each in gen:
+#     print(each)
+####$$!!!!!!!规律-->range增加10倍，sum增加100倍
+s = sum(i for i in range(100) if i % 4)
+print(s)
+b = [i for i in range(100) if i % 4]
+print(b)
 ##########################################生成器##############################
-#yield，协同程序，可以暂停后继续运行
+# yield，协同程序，可以暂停后继续运行
 # def myGen():
 #     print('g1')
 #     yield 1
@@ -13,17 +35,17 @@
 # for g in myGen():
 #     print(g)
 
-def fib():
-    a = 0
-    b=1
-    while True:
-        a,b = b, a+b
-        yield a
-for each in fib():
-    if each > 100:
-        break
-    else:
-        print(each, end=' ')
+# def fib():
+#     a = 0
+#     b=1
+#     while True:
+#         a,b = b, a+b
+#         yield a
+# for each in fib():
+#     if each > 100:
+#         break
+#     else:
+#         print(each, end=' ')
 
 # ########迭代器iter(),next()
 # # Fibs 数列
