@@ -1,26 +1,53 @@
-########迭代器iter(),next()
-# Fibs 数列
-class Fib:
-    def __init__(self, n=20):
-        self.a = 0
-        self.b = 1
-        self.n = n
+##########################################生成器##############################
+#yield，协同程序，可以暂停后继续运行
+# def myGen():
+#     print('g1')
+#     yield 1
+#     print('g2')
+#     yield 2
+#
+# # mg =myGen()
+# # next(mg)
+# # next(mg)
+#
+# for g in myGen():
+#     print(g)
 
-    def __iter__(self):
-        return self
+def fib():
+    a = 0
+    b=1
+    while True:
+        a,b = b, a+b
+        yield a
+for each in fib():
+    if each > 100:
+        break
+    else:
+        print(each, end=' ')
 
-    def __next__(self):
-        self.a, self.b = self.b, self.a + self.b
-        if self.a > self.n:
-            raise StopIteration
-        else:
-            return self.a
-
-
-fib = Fib()
-
-for each in fib:
-    print(each)
+# ########迭代器iter(),next()
+# # Fibs 数列
+# class Fib:
+#     def __init__(self, n=20):
+#         self.a = 0
+#         self.b = 1
+#         self.n = n
+#
+#     def __iter__(self):
+#         return self
+#
+#     def __next__(self):
+#         self.a, self.b = self.b, self.a + self.b
+#         if self.a > self.n:
+#             raise StopIteration
+#         else:
+#             return self.a
+#
+#
+# fib = Fib()
+#
+# for each in fib:
+#     print(each)
 
 
 # s1 = 'abcdef'
