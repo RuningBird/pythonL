@@ -1,15 +1,52 @@
+########迭代器iter(),next()
+# Fibs 数列
+class Fib:
+    def __init__(self, n=20):
+        self.a = 0
+        self.b = 1
+        self.n = n
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        self.a, self.b = self.b, self.a + self.b
+        if self.a > self.n:
+            raise StopIteration
+        else:
+            return self.a
+
+
+fib = Fib()
+
+for each in fib:
+    print(each)
+
+
+# s1 = 'abcdef'
+# it = iter(s1)
+# try:
+#     print(next(it))
+#     print(next(it))
+#     print(next(it))
+#     print(next(it))
+#     print(next(it))
+#     print(next(it))
+#     print(next(it))
+# except StopIteration:
+#     print('yuejie')
 #################################44以前复习
 ##__str__
 
-class N:
-    def __str__(self):
-        return 'abc'
-
-    ##控制台可以直接调用
-    def __repr__(self):
-        return 'abc'
-n = N()
-print(n)
+# class N:
+#     def __str__(self):
+#         return 'abc'
+#
+#     ##控制台可以直接调用
+#     def __repr__(self):
+#         return 'abc'
+# n = N()
+# print(n)
 
 
 
