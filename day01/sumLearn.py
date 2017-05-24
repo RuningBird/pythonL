@@ -1,3 +1,14 @@
+###计时器模块
+import timeit
+
+
+def tt():
+    print('test')
+
+
+t1 = timeit.timeit('tt', "from __main__ import tt")
+print(t1)
+
 #########################################模块 和 命名空间#############
 # import 模块命  ##每次都得加   模块命，调用函数
 # from 模块名 import 函数名 ####尽量不要用，有可能命名冲突
